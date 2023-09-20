@@ -1,0 +1,1 @@
+import {IShoppingProduct} from "../../types";export interface ShoppingProductCardViewControllerProps {    product: IShoppingProduct,    updateQuantity: (id: string, value: number) => void,}export interface ShoppingProductCardViewProps extends ShoppingProductCardViewControllerProps {    deleteCard: (id: string) => void,    restoreCard: (id: string) => void,}

@@ -1,0 +1,1 @@
+import ShoppingCartStore from "../../stores/ShoppingCartStore";const useShoppingProductListViewModel = () => {    const {products, updateQuantity, deleteCard, restoreCard} = ShoppingCartStore;    return {        products,        updateQuantity,        deleteCard,        restoreCard,    }};export default useShoppingProductListViewModel;

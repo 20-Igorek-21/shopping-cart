@@ -1,0 +1,1 @@
+export const MESSAGE_DISPLAY_DURATION: number = 2000;export const MIN_PRODUCT_QUANTITY: number = 1;export const MAX_PRODUCT_QUANTITY: number = 30;

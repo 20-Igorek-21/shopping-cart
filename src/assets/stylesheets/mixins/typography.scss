@@ -1,0 +1,85 @@
+@import './../variables/index';
+
+@mixin font($family, $weight, $size, $line-height) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  font-style: normal;
+}
+
+/* Extra large (24px) text mixins */
+@mixin font-text__extra-large($weight, $line-height) {
+  @include font($font-family-sofia-pro, $weight, 24px, $line-height);
+}
+
+/*{
+  font-family: Sofia Pro, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+}*/
+@mixin font-text__extra-large--extra-bold {
+  @include font-text__extra-large($font-weight-extra-bold, 32px);
+}
+
+/* Large (18px) text mixins */
+@mixin font-text__large($weight, $line-height) {
+  @include font($font-family-sofia-pro, $weight, 18px, $line-height);
+}
+
+/*{
+  font-family: Sofia Pro, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+}*/
+@mixin font-text__large--extra-bold {
+  @include font-text__large($font-weight-extra-bold, 20px);
+}
+
+/* Medium (16px) text mixins */
+@mixin font-text__medium($weight, $line-height) {
+  @include font($font-family-sofia-pro, $weight, 16px, $line-height);
+}
+
+/*{
+  font-family: Sofia Pro, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}*/
+@mixin font-text__medium--regular {
+  @include font-text__medium($font-weight-regular, 19px);
+}
+
+/* Small (14px) text mixins */
+@mixin font-text__small($weight) {
+  @include font($font-family-sofia-pro, $weight, 14px, 16px);
+}
+
+/*{
+  font-family: Sofia, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}*/
+@mixin font-text__small--regular {
+  @include font-text__small($font-weight-regular);
+}
+
+/* Extra small (13px) text mixins */
+@mixin font-text__x-small($weight) {
+  @include font($font-family-sofia-pro, $weight, 13px, 16px);
+}
+
+/*{
+  font-family: Sofia Pro, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}*/
+@mixin font-text__x-small--regular {
+  @include font-text__x-small($font-weight-regular);
+}
+/* END TEXT MIXINS (font-size: 13-20px) */

@@ -1,0 +1,1 @@
+import ShoppingCartStore from "../../stores/ShoppingCartStore";const useShoppingCartViewModel = () => {    const {products, totalPrice, productDeleted} = ShoppingCartStore;    return {        products,        totalPrice,        productDeleted    }};export default useShoppingCartViewModel;

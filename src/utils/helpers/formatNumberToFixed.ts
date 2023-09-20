@@ -1,0 +1,1 @@
+export const formatNumberToFixed = (value: number): number => {    return parseFloat(value.toFixed(2));}
